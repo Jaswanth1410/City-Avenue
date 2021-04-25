@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("photos/Nandi-Hills.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.fa-home{
+    padding-right: 7px;
+}
+.fa-caret-square-o-down{
+padding-left: 7px;
+}
+nav{
+    display: flex;
+    background-color: rgb(27, 20, 20);
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right:20px;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    position: relative;
+}
+.nav-links ul li:hover{
+    background-color: rgb(248, 195, 195);
+    border-radius: 10px;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 19px;
+}
+.sub-menu ul li{
+    width: 100px;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    background-color:rgb(27, 20, 20) ;
+    border-bottom: 2px double rgb(75, 0, 0);
+  
+}
+.sub-menu{
+    display: none;
+}
+.nav-links ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    padding: 5px;
+    background-color:rgb(27, 20, 20) ;
+}
+.nav-links ul li:hover .sub-menu ul li:hover{
+    color: rgb(236, 0, 0);
+    background-color:rgb(252, 237, 237) ;
+    border-radius: 0;
+}
+.back{
+    padding-left: 8%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.back img{
+   width: 28px;
+}
+
+.back a{
+    text-decoration: none;
+    padding-left: 10px;
+    color: azure;
+    font-size: 35px;
+    font-family: 'Merriweather', serif;
+}
+.back a:hover{
+    color: rgb(236, 0, 0);
+}
+.nav-links ul li a:hover{
+    color: rgb(236, 0, 0);
+}
+.text-box{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+/*----tourist spots-----*/
+.tourist_spots{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content:center; 
+}
+.tourist_spots-col{
+    flex-basis: 32%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.tourist_spots-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.tourist_spots-col img{
+    background: transparent;
+    width: 100%;
+    transition:0.5s;
+}
+.tourist_spots-col img:hover{
+    background: rgba(226,0,0,0.7);
+}
+/*----footer-----*/
+.footer{
+    width: 100%;
+    text-align: center;
+    /* padding: 30px; */
+}
+
+.footer h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    padding-top: 0;
+}
+#icons {
+    text-align: center;
+                width: 100%;
+}
+#icons i{
+    font-size: 28px;
+    color: tomato;
+    cursor: pointer;
+    padding: 22px;
+}
+.footer p{
+    text-align: center;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    color: rgb(87, 81, 69);
+}
+.btn{
+    display: none;
+    }
+@media screen and (max-width: 800px){
+    .nav-links{
+        display: none;
+    }
+}
+ @media screen and (max-width: 800px){
+    .nav-links ul li{
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .nav-links ul li:hover .sub-menu{
+ 
+        position: relative;
+
+    }
+    #navlinks{
+        position: absolute;
+        background: tomato;
+        /* height: 50vh; */
+        width: 170px;
+        top: 0;
+        right: -210px;
+        text-align: left;
+        z-index: 2;
+        display: block;
+        padding: 20px;
+        transition: 1s;
+    }
+    .btn{
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        padding-top: 10px;
+        padding-right: 40px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+    .btn1{
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .nav{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .nav-links ul li:hover{
+        background-color:rgb(250, 189, 189) ;
+    }
+    .btn:hover{
+        color: yellow;
+        cursor: pointer;
+    }
+   

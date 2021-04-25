@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityAvenue</title>
+    <link rel = "icon" href ="https://img.icons8.com/ios-filled/50/000000/city-guide.png" type = "image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   
+    
+</head>
+<body>
+    <section class="back">
+        <nav>
+            <div class="header"><img src="https://img.icons8.com/ios/40/ffffff/city-guide.png"/><a href="index.html">City Avenue</a></div>
+            
+            <div class="nav-links" id="navlinks">
+               <div class="btn"><i  class="fa fa-close" onclick="hidemenu()" ></i></div> 
+                   <ul>
+                       <li><a href="index.html"><i class="fa fa-home" ></i>Home</a></li>
+                       <li><a href="">Places<i class="fa fa-caret-square-o-down" ></i></a>
+                        <div class="sub-menu" onclick="show()" onclick="hide()" >
+                            <ul>
+                                <li><a href="hotels.html">Hotels</a></li>
+                                <li><a href="restaurants.html">Restaurants</a></li>
+                                <li><a href="hotels.html">Hospitals</a></li>
+                                <li><a href="places to visit.html">Tourist-Places</a></li>
+                            </ul>
+                        </div>
+                       </li>     
+                       
+                       <li><a href="contact1.html">Contact us</a></li>
+                   </ul>
+            </div>
+            <div class="btn btn1"><i  class="fa fa-bars" onclick="showmenu()"></i></div>
+        </nav>
+    </section>
+ 
+    <section class="Explore">
+        <h1>Explore Bangalore</h1>
+        <p>The city is popularly known as "The Silicon Valley of India"</p>
+        <div class="places">
+        <div class="box b">
+            <a href="hotels.html"><img src="photos/hotel.cms" alt="">
+            <div class="centered">Hotels </div>  </a>
+        </div>
+        <div class="box">
+            <a href="restaurants.html"> <img src="photos/hotel.png" alt="">
+            <div class="centered">Restaurants</div></a>
+        </div>
+        <div class="box">
+           <a href="hospitals.html"> <img src="photos/hospitals.jpg" alt="">
+            <div class="centered">Hospitals</div></a>
+        </div>
+        <div class="box">
+            <a href="places to visit.html"> <img src="photos/Tourist-Places.jpg" alt="">
+             <div class="centered">Tourist-Places</div></a>
+         </div>
+    </div>
+    </section>
+
+    <Section class="about" >
+        <div class="box1">
+            <h1>About <span>Bangalore</span></h1>
+            <p>Bangalore, officially called Bengaluru, is the capital of Karnataka. It is the second fastest growing metropolis of India and also the fourth highest GDP contributor after cities like Mumbai, Delhi, and Chennai. Bangalore is popularly known as the ‘Silicon Valley’ of India for being a major IT hub of the nation.<br><br>
+                IT moguls like Wipro and Infosys have their headquarters in the city. The bustling cosmopolitan city with an all-year-round pleasant climate has many cafes, shopping malls and restaurants for a luxurious and upscale lifestyle.<br><br>
+                
+            There are many notable institutions located in the city such as Defense Research and Development Organization (DRDO), Indian Space Research Organization (ISRO), Indian Institute of Science (IIS), Indian Institute of Management (IIMB), National Aeronautics Laboratory (NAL) and National Law School.<br><br>
+
+            Bengaluru – A Tourist’s Heaven<br>
+            <span>Bangalore- A City of Gardens and Techno Park</span>
+            <br><br>
+            Legend has it that King Veeraballa of Vijayanagara once lost his way in a forest. Hungry and exhausted, he chanced upon an old woman cooking outside a hut. He begged her for food and was given a bowl of baked beans or ‘benda kallu’ in Kannada.
+            <br><br>
+            The king’s gratitude was so immense that he named the place after the dish. Hence the region came to be known as ‘Benda Kallu Ooru’, or ‘Land of baked beans’ which eventually became Bangalore.
+            <br><br>
+            Bangalore (Bengaluru), also known as the Silicon Valley of the south, is a perfect example of peaceful coexistence. Recent years have seen Bengaluru develop and grow exponentially, while staying true to its roots. Despite its gradual metamorphosis into a concrete jungle filled with corporates and high-end pubs, Bengaluru remains a tourist hub with several million tourists flocking to see the various sights in and around the city every year.
+        </div>
+        <img src="photos/inspire.jpg" alt="">
+    </Section>
+    <section class="con">
+        <h1>Contact us</h1>
+        <div id="con">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin" ></i>
+        </div>
+        <p>
+            Copyright <i class="fa fa-copyright" ></i> 2021 CityAvenue.com Travel Bengaluru pte. Ltd. All rights reserved <br> Site Operator: CityAvenue.com Travel Bengaluru pte. Ltd.
+        </p>
+    </section>
+    <script>
+        var navlinks = document.getElementById("navlinks")
+        function showmenu(){
+            navlinks.style.right = "0"
+        }
+        function hidemenu(){
+            navlinks.style.right = "-210px"
+        }
+    </script>
+
+</body>
+</html>
